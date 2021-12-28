@@ -6,7 +6,8 @@
         .induction_header {
             @include flexin(center);
             h3{
-                font-family: extra_mid_poppins;
+                font-family: bold_poppins;
+                text-align: center
             }
         }
         .induction_logo_container {

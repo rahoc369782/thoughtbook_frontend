@@ -1,0 +1,16 @@
+@import "../../Globals/Global.scss";
+@import "../../Globals/Themes.scss";
+
+.resend_otp_btn {
+    display:block !important;
+    color: #757577;
+    padding-right: 10px;
+    button {
+    border: none;
+    outline:none;
+    padding:12px 0px 0px 0px;
+    background-color:white;
+    color:$primary-app-color;
+    font-family: mid_poppins;
+    }
+}

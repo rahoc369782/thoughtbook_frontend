@@ -1,8 +1,7 @@
 @import "../../Globals/Global.scss";
 @import "../../Globals/Themes.scss";
 
-.register_container {
-    .register_subcontainer {
+.login_container {
     margin: 10px 10px 10px 10px;
     h4 {
         font-family: mid_poppins;
@@ -35,5 +34,4 @@
             font-size: $mid-font-size;
             color: #707070;
         }
-    }
 }
