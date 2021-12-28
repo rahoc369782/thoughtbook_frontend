@@ -1,0 +1,27 @@
+@import "../../Globals/Global.scss";
+@import "../../Globals/Themes.scss";
+
+.login_container {
+    margin: 30px 10px 10px 10px;
+    h4 {
+        font-family: mid_poppins;
+    }
+    hr {
+        border: 0.4px solid $primary-border-color;
+        margin: unset;
+    }
+
+    .login_singnup_opt_container {
+         @include flexin(center);
+         margin: 30px 0px 30px 0px;
+        .login_singnup_opt_subcontainer {
+            font-family: mid_poppins;
+            font-size: $small-font-size;
+            span {
+                font-family: extra_mid_poppins;
+                color: $primary-app-color;
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../Globals/Global.scss";
+@import "../../Globals/Themes.scss";
+
+.induction_container {
+    .induction_subcontainer {
+        .induction_header {
+            @include flexin(center);
+            h3{
+                font-family: extra_mid_poppins;
+            }
+        }
+        .induction_logo_container {
+            @include flexin(center);
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .induction_quotes {
+            margin: 0px 30px 50px 30px;
+            text-align: center;
+            font-size: $mid-font-size;
+            font-family: mid_poppins;
+            color: #202124;
+        }
+    }
+}

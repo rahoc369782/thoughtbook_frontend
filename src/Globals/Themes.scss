@@ -1,0 +1,28 @@
+// White theme
+
+// ._t_regular_theme {
+   $theme-regular-background:white;
+   $primary-font-color:black;
+   $primary-input-backgroud:#F7F7F8; 
+   $primary-border-color:#D3D3D3; 
+// }
+
+
+   $theme-background:#181818;
+   $primary-font-color:black;
+//    $primary-input-backgroud:#202020;
+//    $primary-border-color:#2C2C2C; 
+
+
+   ._t_regular_theme { 
+       background-color: $theme-regular-background;
+       color: black;
+   }
+   ._t_dark_theme {
+       background-color: $theme-background;
+       color: white;
+   }
+// $primary-input-backgroud:#202020;
+// Dark theme
+// $theme-background:white; 
+// $primary-font-color:black;

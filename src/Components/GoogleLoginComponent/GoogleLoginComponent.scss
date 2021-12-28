@@ -1,0 +1,22 @@
+@import "../../Globals/Global.scss";
+@import "../../Globals/Themes.scss";
+
+.google_login_container {
+    border: 0.5px solid #F7F7F8;
+    background-color: $primary-input-backgroud;
+    height: 45px;
+    border-radius: 4px;
+    @include flexin(center);
+    .google_login_subcontainer {
+        @include flexin(center);
+        img {   
+            width: 22px;
+            height: 22px;
+        }
+        span {
+            padding-left: 10px;
+            font-size: $mid-font-size;
+            font-family: mid_poppins;
+        }
+    }
+}
