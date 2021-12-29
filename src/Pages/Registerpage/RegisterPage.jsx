@@ -5,11 +5,15 @@ import { ButtonComponent } from "../../Components/ButtonComponent/ButtonComponen
 import { GoogleLoginComponent } from "../../Components/GoogleLoginComponent/GoogleLoginComponent"
 import { InductionComponent } from "../../Components/InductionComponent/InductionComponent"
 import { OtpVerification } from "../../Components/OtpVerification/OtpVerification";
+import { SearchPage } from "../SearchPage/SearchPage"
+import Drawer from '@mui/material/Drawer';
+
+
 class RegisterPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            anchor: true
         }
     }
     render() {
@@ -21,7 +25,7 @@ class RegisterPage extends Component {
                     <div style={{ marginTop: 10 }}>
                         <OtpVerification />
                     </div>
-                    <ButtonComponent callback={this.toggle_theme} btncolor="white" />
+                    <ButtonComponent callback={() => this.setState({ anchor: true })} btncolor="white" />
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <hr style={{ width: '20%' }} />
                         <h4>Or</h4>
@@ -47,6 +51,14 @@ class RegisterPage extends Component {
                             By proceeding , I agree to<span>T&C</span> and <span>privacy policy</span>
                         </label>
                     </div>
+
+                    <Drawer
+                        anchor='right'
+                        open={this.state.anchor}
+                        onClose={() => this.setState({ anchor: false })}
+                    >
+                        <SearchPage />
+                    </Drawer>
                 </div>
             </div>
         )
